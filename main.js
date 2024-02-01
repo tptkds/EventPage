@@ -1,7 +1,8 @@
 import { countUp } from "./utils/countUp.js";
+import { setTabMenu } from "./module/tabMenu.js";
 /*import { setSelectCards, setSelectButton, setResultContainer } from "./module/selectCard.js";
 import { setMbtiSection } from "./module/mbtiSelect.js";
-import { setTabMenu } from "./module/tabMenu.js";
+
 import { setShareURLButton } from "./module/share.js";
 */
 const data = {
@@ -11,8 +12,8 @@ const data = {
 const participateDOM = document.getElementById('participate-number');
 countUp(participateDOM, data.participate, 1, 10);
 
-/*setTabMenu();
-
+setTabMenu();
+/*
 setSelectCards();
 setSelectButton();
 
