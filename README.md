@@ -15,3 +15,6 @@
 <img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/7b6e0d1a-3756-407a-935f-a8d0d7927de1"/>
 <h2>과자 MBTI 테스트 다시하기</h2>
 <img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/a1bbdf4f-1bf0-4fa1-bd14-c03392e4cf4b"/>
+<h2>URL 공유</h2>
+<p>navigator.clipboard.writeText(location.href) => 클립보드에 현재 페이지 url을 쓰는 것으로 구현</p>
+<img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/57b72bfc-51cd-474d-9fdf-ca322d5acefa"/>
