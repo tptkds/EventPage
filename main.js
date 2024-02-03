@@ -1,10 +1,8 @@
 import { countUp } from "./utils/countUp.js";
 import { setTabMenu } from "./module/tabMenu.js";
-import { setResultContainer, setSelectButton, setSelectCards} from "./module/selectCard.js";
-/*
- setSelectButton, setResultContainer 
+import { setResultContainer, setSelectButton, setSelectCards } from "./module/selectCard.js";
 import { setMbtiSection } from "./module/mbtiSelect.js";
-
+/*
 import { setShareURLButton } from "./module/share.js";
 */
 const data = {
@@ -18,13 +16,10 @@ setTabMenu();
 setSelectCards();
 setSelectButton();
 setResultContainer();
+setMbtiSection();
 /*
 
 
-
-setResultContainer();
-
-setMbtiSection();
 
 setShareURLButton();
 */
