@@ -2,9 +2,8 @@ import { countUp } from "./utils/countUp.js";
 import { setTabMenu } from "./module/tabMenu.js";
 import { setResultContainer, setSelectButton, setSelectCards } from "./module/selectCard.js";
 import { setMbtiSection } from "./module/mbtiSelect.js";
-/*
 import { setShareURLButton } from "./module/share.js";
-*/
+
 const data = {
   participate: 1341513412,
 };
@@ -17,9 +16,4 @@ setSelectCards();
 setSelectButton();
 setResultContainer();
 setMbtiSection();
-/*
-
-
-
 setShareURLButton();
-*/
