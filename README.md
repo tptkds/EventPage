@@ -10,5 +10,5 @@
 <h2>최애 과자 결과</h2>
 <img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/6fbdd345-9d5f-4cbf-8851-888308ad47fa"/>
 <h2>최애 과자 결과 다시하기</h2>
-<img width="100%" src="[https://github.com/tptkds/event-page/assets/58039782/6fbdd345-9d5f-4cbf-8851-888308ad47fa](https://github.com/tptkds/event-page/assets/58039782/243b60d5-5568-41cd-9b53-ed7156e5877c)https://github.com/tptkds/event-page/assets/58039782/243b60d5-5568-41cd-9b53-ed7156e5877c"/>
+<img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/243b60d5-5568-41cd-9b53-ed7156e5877c"/>
 
