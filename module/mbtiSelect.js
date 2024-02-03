@@ -34,12 +34,19 @@ const [yesButton,noButton] = document.querySelector('.mbti-select').children;
 const[mbtiContainerBefore, mbtiContainerPending, mbtiContainerResult] = document.getElementsByClassName('mbti-container');
 const mbtiResult = mbtiContainerResult.children[0];
 const mbtiDescription = mbtiContainerResult.children[1];
+const mbtiRetryButton = document.querySelector('.mbti-retry-button');
 let k = 1;
 let score = 0;
 export const setMbtiSection = () => {
-    console.log(yesButton)
     yesButton.addEventListener('click', () => setScore(yesButton));
     noButton.addEventListener('click', () => setScore(noButton));
+    mbtiRetryButton.addEventListener('click', () => {
+        score = 0;
+        k = 0;
+        mbtiQuestion.innerHTML = mbtiQuestionList[k++];
+        mbtiContainerBefore.style.display = 'block';
+        mbtiContainerResult.style.display = 'none';
+    })
 }
 
 function setScore(element) {
@@ -47,7 +54,6 @@ function setScore(element) {
     if (element.outerText == "YES") score++;
     if (k > 3) {
         const result = getMbtiResult(score);
-        console.log(result)
         mbtiResult.innerHTML = result.title;
         mbtiDescription.innerHTML = result.description;
         mbtiContainerBefore.style.display = 'none';
