@@ -1,6 +1,6 @@
 import { countUp } from "./utils/countUp.js";
 import { setTabMenu } from "./module/tabMenu.js";
-import { setSelectButton, setSelectCards} from "./module/selectCard.js";
+import { setResultContainer, setSelectButton, setSelectCards} from "./module/selectCard.js";
 /*
  setSelectButton, setResultContainer 
 import { setMbtiSection } from "./module/mbtiSelect.js";
@@ -17,6 +17,7 @@ countUp(participateDOM, data.participate, 1, 10);
 setTabMenu();
 setSelectCards();
 setSelectButton();
+setResultContainer();
 /*
 
 

@@ -32,7 +32,7 @@ const participateButton = document.querySelector('.participate-button');
 const resultContainerNotYet = document.getElementsByClassName('result-container')[0];
 const resultContainer = document.getElementsByClassName('result-container')[1];
 const [, resultImg, resultWinner, resultDescription] = resultContainer.children;
-
+const selectRetryButton = document.querySelector('.select-retry-button');
 export const setSelectCards = () => {
     for (let i = 0; i < 4; i++) {
         const snackCard = makeDOMwithProperties('button', { id: `select-${i + 1}`, className: 'snack-card' });
@@ -61,5 +61,13 @@ export const setSelectButton = () => {
         resultWinner.innerHTML = snackList[selectedSnackCardIndex].name;
         resultDescription.innerHTML = snackList[selectedSnackCardIndex].description;
     });
+
+}
+
+export const setResultContainer = () => {
+    selectRetryButton.addEventListener('click', () => {
+        resultContainerNotYet.style.display = 'flex';
+        resultContainer.style.display = 'none';
+    })
 
 }
