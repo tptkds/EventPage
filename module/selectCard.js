@@ -28,6 +28,11 @@ const snackList = [
 
 ];
 const snackCardList = document.querySelector('.snack-card-list');
+const participateButton = document.querySelector('.participate-button');
+const resultContainerNotYet = document.getElementsByClassName('result-container')[0];
+const resultContainer = document.getElementsByClassName('result-container')[1];
+const [, resultImg, resultWinner, resultDescription] = resultContainer.children;
+
 export const setSelectCards = () => {
     for (let i = 0; i < 4; i++) {
         const snackCard = makeDOMwithProperties('button', { id: `select-${i + 1}`, className: 'snack-card' });
@@ -44,4 +49,17 @@ export const setSelectCards = () => {
         appendChildrenList(snackCard, [snackImg, snackDescription]);
         snackCardList.appendChild(snackCard);
     }
+}
+
+export const setSelectButton = () => {
+    participateButton.addEventListener('click', () => {
+        const selectedSnackCardIndex = document.getElementsByClassName('snack-card select')[0].id.slice(7) - 1;
+        resultContainerNotYet.style.display = 'none';
+        resultContainer.style.display = 'flex';
+        resultImg.src = snackList[selectedSnackCardIndex].imgSrc;
+        resultImg.alt = snackList[selectedSnackCardIndex].name;
+        resultWinner.innerHTML = snackList[selectedSnackCardIndex].name;
+        resultDescription.innerHTML = snackList[selectedSnackCardIndex].description;
+    });
+
 }
