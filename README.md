@@ -11,4 +11,5 @@
 <img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/6fbdd345-9d5f-4cbf-8851-888308ad47fa"/>
 <h2>최애 과자 결과 다시하기</h2>
 <img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/243b60d5-5568-41cd-9b53-ed7156e5877c"/>
-
+<h2>과자 MBTI 테스트</h2>
+<img width="100%" src="https://github.com/tptkds/event-page/assets/58039782/7b6e0d1a-3756-407a-935f-a8d0d7927de1"/>
